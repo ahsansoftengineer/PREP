@@ -1,0 +1,7 @@
+## INTERVIEW QUESTIONS 
+### .NET CORE
+### ANGULAR
+### TOPICS
+
+1. C#
+2. 
