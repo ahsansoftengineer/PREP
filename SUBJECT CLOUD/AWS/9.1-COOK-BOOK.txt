@@ -1,0 +1,104 @@
+COOKBOOK: is a Collection of Recipes and some other files and folders
+INSIDE COOKBOOK: 
+.chefignore -> like .gitignore
+kitchen.yml -> for testing CookBook
+Metadata.rb -> name, version, author etc of CookBook
+Readme.md -> Information about usage of CookBook
+Recipe -> Where you write Code
+spec -> Unit Test
+Test -> Integration Test
+
+LAB
+```
+sudo su 
+which chef
+mkdir coobooks
+ls
+cd cookbooks/
+chef generate cookbook test-cookbook
+yum install tree -y
+tree
+cd test-cookbook/
+chef generate recipe <Name of Recipe>
+tree
+cd ..
+vi test-cookbook/recipes/test-recipe.rb
+
+```
+RUBY
+```
+file '/myfile' do
+content 'Welcome to LINUX'
+action :create
+end
+
+excape :wq enter
+
+
+```
+```
+[cookbooks]# chef spec ruby -c ":recipe[test-cookbook::test-recipe]"
+o/p -> syntax OK
+[]# chef-client -zr "recipe[test-cookbook::test-recipe]"
+ls /
+```
+Reipe 2 
+```
+cd test-cookbook/
+chef generate recipe recipe2
+cd ..
+vi test-cookbook/recipes/recipe2.rb
+
+package 'tree' do
+action :install
+end
+
+File '/recipe2'
+content 'second recipe'
+action :create
+owner :root
+group :root
+end
+```
+
+DEPLOYING on APACHE SERVER
+```
+[cookbooks] ls
+chef generate cookbooks apache-cookbook
+ls
+cd apache-cookbook/
+chef generate recipe apache-recipe
+tree
+cd ..
+ls
+vi apache-cookbook/recipes/apache-recipe.rb
+
+```
+RUBY
+```
+package "https" do
+action :install
+end
+
+File "/var/www/html/index.html" do
+content "Welcome here guys"
+action :create
+end
+
+Service 'httpd' do
+action [:enable, :start]
+end
+```
+[cookbooks]# chef exec ruby -c apache-cookbook/recipes/apache-recipe.rb
+chef-client -zr "recipe[apache-cookbook::apache-recipe]"
+
+
+
+
+
+
+
+
+
+
+

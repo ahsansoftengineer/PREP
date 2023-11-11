@@ -1,0 +1,65 @@
+### This Section is Continues from 9.2 
+sudo su
+ohai
+ohai ipaddress
+ohai memory/total
+ohai cpu/model_name
+ohai cpu/0/mhz // not working
+
+cd cookbooks/apache-cookbook
+chef generate recipe new-attribute-recipe
+
+cd ..
+vi apache-cookbook/recipes/new-attribute-recipe.rb
+```RUBY CODE // Attribute Example
+file '/basicinfo' do
+content "This is to get attributes
+HOSTNAME: #{node['hostname']}
+IPADDRESS: #{node['ipaddress']}
+CPU: #{node['cpu']['model_name']}
+MEMORY: #{node['memory']['total']}
+"
+owner 'root'
+group 'root'
+action :create
+end
+```
+exc :wq
+
+chef-client -zr "recipe[apache-cookbook::new-attribute-recipe]"
+ls /
+cat /basicinfo
+
+### Linux Command Execution in RUBY
+// EOH stands for End of Here
+vi test-cookbook/recipes/test-recipes.rb
+execute "run a script" do
+	command <<-EOH
+	mkdir /rajputdir
+	touch /rajputfile
+	EOH
+end
+
+// Running Recipe
+chef-client -zr "recipe[test-cookbook::test-recipe]"
+vi test-cookbook/recipes/test-recipe.rb
+user "rajput" do
+action :create
+end
+
+esc :wq
+
+// Running Recipe
+chef-client -zr "recipe[test-cookbook::test-recipe]"
+
+
+
+
+
+
+
+
+
+
+
+

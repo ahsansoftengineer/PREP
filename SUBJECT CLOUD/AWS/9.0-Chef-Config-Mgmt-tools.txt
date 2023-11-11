@@ -1,0 +1,43 @@
+What is Configurtion Managment Tools?
+Chef is a Configuration management DevOps tool that manages the infrastructure by writing code rather than using a manual process so that it can be automated, tested and deployed very easily. Chef has Client-server architecture and it supports multiple platforms like Windows, Ubuntu, Centos, and Solaris etc.
+
+Another 
+What Is Chef?
+Chef is an automation tool that provides a way to define infrastructure as code. Infrastructure as code (IAC) simply means that managing infrastructure by writing code (Automating infrastructure) rather than using manual processes. It can also be termed as programmable infrastructure. Chef uses a pure-Ruby, domain-specific language (DSL) for writing system configurations. Below are the types of automation done by Chef, irrespective of the size of infrastructure:
+
+Push Based
+
+Pull Based
+
+IAC (Infrastructure as Code)
+System Adminstrator -> DevOps Engr
+
+Recipe -> Code that is used to Organize Server
+CookBook  -> is Collection of Recipe 
+Chef SuperMarket -> Contains Ready Code for CookBook
+Chef Server -> Which Contains CookBooks (Git Hub)
+Knife -> CLI Tool to talk with Chef Server & Node
+Node -> is also the Server Which Organize by Chef Server also known as Ohai
+Ohai -> Ohai Fetches the Current State of the Node its located in
+Cheif Client -> is installed on every Node
+Chef Server to Node Model is called Chef Client
+Idempotancy -> we don't repeat our self
+
+TERMS USED IN COOK BOOK
+Resource -> Basic Components of a Recipe used to manage the infra with diff kind of states
+Package -> Means Softwares (httpd, tree)
+Service -> Manage Servicies on Node
+User -> Manage Users on Node
+group -> Manages Group
+Template -> Manage files with embedded Ruby template
+cookbook-file -> Transfer files from the files subdir in the cookbook to a location on node
+File ->  Manage file content on node
+execute -> execute command on node
+cron -> edits on existing cron file on the node
+directory -> Manage Dir on Node
+
+
+
+
+
+

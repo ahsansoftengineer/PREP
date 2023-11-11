@@ -1,0 +1,94 @@
+1. Start a Linux Instance in AWS
+2. goto https://www.chef.io/downloads/tools/workstation
+3. Start Download the Chef and the Stop
+4. Copy the https://packages.chef.io/files/stable/chef-workstation/23.7.1042/amazon/2/chef-workstation-23.7.1042-1.el7.x86_64.rpm
+5. Download it on the Amazon Linux 
+```
+wget https://packages.chef.io/files/stable/chef-workstation/23.7.1042/amazon/2/chef-workstation-23.7.1042-1.el7.x86_64.rpm
+```
+6. Install it on the Amazon Linux
+```
+sudo su
+yum install chef-workstation-23.7.1042-1.el7.x86_64.rpm -y
+yum install libxcrypt-compat -y // without it chef is not working
+yum install tree -y
+which chef
+chef -v
+mkdir cookbooks
+cd cookbooks
+chef generate cookbook test-cookbook
+ls
+cd test-cookbook
+chef generate recipe test-recipe
+tree
+cd .. // going back in cookbooks dir
+vi test-cookbook/recipes/test-recipe.rb
+i // Press for Insert Mode
+// Write the Following Code
+### RUBY CODE
+file '/myfile' do
+content 'Welcome to LINUX'
+action :create
+end
+
+
+package 'tree' do
+action :install
+end
+
+file '/myfile2' do
+content 'This is my Second Project Code'
+action :create
+owner 'root'
+group 'root'
+end
+### exc :wq Exit vi
+
+// Testing Code if its OK
+chef exec ruby -c test-cookbook/recipes/test-recipe.rb
+
+// Running Code
+chef-client -zr "recipe[test-cookbook::test-recipe]"
+
+```
+
+
+
+
+
+## CREATING ANOTHER COOK BOOK AND RECIPE
+```
+cd cookbooks
+chef generate cookbook apache-cookbook
+cd apache-cookbook
+chef generate recipe apache-recipe
+cd ..
+vi apache-cookbook/recipes/apache-recipe.rb
+---RUBY CODE Write the Following Code in the File
+package 'httpd' do 
+action :install
+end
+
+file '/var/www/html/index.html' do
+content 'welcome to Technical Gufta Ahsan'
+action :create
+end
+
+service 'httpd' do
+action [:enable, :start]
+end
+---
+chef exec ruby -c apache-cookbook/recipes/apache-recipe.rb
+chef-client -zr "recipe[apache-cookbook::apache-recipe]"
+```
+
+
+
+
+
+
+
+
+
+
+

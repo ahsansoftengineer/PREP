@@ -1,0 +1,51 @@
+AWS GIT
+yum update -y
+yum install get -y
+git --version
+git config --global user.name "m.ahsan.saifi"
+git config --global user.email "ahsansoftengineer@gmail.com"
+git config --list
+git init
+git remote add origin <github repo url>
+git pull -u origin master
+git log
+git show <commid-id>
+git status
+git add .
+git commit -m "Message your for Commit"
+git status
+git log
+git push origin number
+
+
+
+git remote add origin https://github.com/ahsansoftengineer/aws-ec2-repo.git
+// Option-1 Another way of Adding Access Token
+ssh-keygen -t rsa -b 4096 -C "ahsansoftengineer@gmail.com"
+
+// Option-2 Run the Command to Generate ssh-key in AWS EC2
+ssh-keygen // Option 2 is not working Option 1 is Correct
+
+
+cat ~/.ssh/id_rsa.pub // Read & Copy the File
+
+// Associate the Key to Github Account
+Profile > Settings > SSH and GPG keys 
+New SSH Key >
+	Title GitHub_AWS_EC2
+	Type Authorization
+	Key ssh-rsa KEY_CODE  username@gmail.com
+
+
+// Verify if the Keys Works
+ssh -T git@github.com
+
+// Clone Your Repository
+git clone git@github.com:emailofuser/aws-ec2-repo.git
+
+cat >myFile.txt // Creating a Test File
+git add . // Adding Files to Github Account
+git commit -m "Message for Commit" // Setting up Messages
+git push // Pushing the Code to Github account
+
+// Vola
