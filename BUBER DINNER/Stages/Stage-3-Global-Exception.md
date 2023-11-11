@@ -85,8 +85,8 @@ dotnet add .\Donation.Application\ package FluentResult
 
 ```c#
 // 1. Interface Impl
-namespace Donation.Application.Servicies.Authentication.IAuthenticationService
-namespace Donation.Application.Servicies.Authentication.AuthenticationService
+namespace Donation.Application.Servicies.Authentication.IAuthenticationService;
+namespace Donation.Application.Servicies.Authentication.AuthenticationService;
 
 // 2. Impl IError for Custom Exception
 namespace Donation.Application.Common.Errors.DuplicationEmailError : IError
