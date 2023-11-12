@@ -1,0 +1,6 @@
+| Heading | Defination |
+|:-------:|:---------- | 
+| Model-View-Controller (MVC) | MVC is often used in web applications, where the model represents the database or other data source, the view represents the HTML pages and UI elements, and the controller represents the server-side logic that handles requests and updates the view and model accordingly. |
+| Model-View-View-Model (MVVM) | One of the key differences between MVVM and MVC is that MVVM uses data binding to connect the view and the ViewModel, rather than having the controller update the view directly. This allows for more flexibility and modularity in the design of the user interface, and can make it easier to write and test code. |
+| ASP .NET Core Web Form () | Web Forms relies heavily on postbacks and view state to maintain the state of the application, which can make it more difficult to build scalable and maintainable applications. |
+| Templating Engine | The basic idea behind a templating engine is to separate the content and the structure of a document from the logic that generates it. This allows developers to create templates that can be used to generate many different documents, without having to rewrite the content or the structure each time. |

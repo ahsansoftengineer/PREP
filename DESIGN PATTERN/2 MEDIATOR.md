@@ -18,13 +18,111 @@
 
 3. Overall, RxJS can be used as an example of the Mediator pattern in web development, as it allows for the creation of reactive and event-based systems where the library itself acts as the mediator, handling communication between different objects, promoting decoupling and maintainability.
 
-
-
-
 ### Mediator
 - It separate Command Handler Code from, controllers and application services.
 - It involves defining requests, request handlers, and using a central mediator to manage request processing. This helps maintain clean and testable code, simplifying the organization of your application's logic.
 
-### CQS / CQRS (Command Query Segregation)
-- Command Query Segregation, is a software design principle 
-- It Seperate your Command and Query Code in the Application
+The Mediator Pattern is a behavioral design pattern where an object, known as the mediator, centralizes communication between multiple objects, allowing them to interact without being directly coupled. This pattern promotes a more decoupled and modular design.
+
+Here's a simple example of the Mediator Pattern in C#:
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+// Mediator interface
+public interface IMediator
+{
+    void SendMessage(string message, Colleague colleague);
+}
+
+// Colleague interface
+public abstract class Colleague
+{
+    protected IMediator mediator;
+
+    public Colleague(IMediator mediator)
+    {
+        this.mediator = mediator;
+    }
+
+    public abstract void ReceiveMessage(string message);
+    public abstract void SendMessage(string message);
+}
+
+// Concrete Mediator
+public class ConcreteMediator : IMediator
+{
+    private List<Colleague> colleagues = new List<Colleague>();
+
+    public void RegisterColleague(Colleague colleague)
+    {
+        colleagues.Add(colleague);
+    }
+
+    public void SendMessage(string message, Colleague sendingColleague)
+    {
+        foreach (var colleague in colleagues)
+        {
+            if (colleague != sendingColleague)
+            {
+                colleague.ReceiveMessage(message);
+            }
+        }
+    }
+}
+
+// Concrete Colleague
+public class ConcreteColleague : Colleague
+{
+    public ConcreteColleague(IMediator mediator) : base(mediator) { }
+
+    public override void ReceiveMessage(string message)
+    {
+        Console.WriteLine($"Colleague received message: {message}");
+    }
+
+    public override void SendMessage(string message)
+    {
+        Console.WriteLine($"Colleague sending message: {message}");
+        mediator.SendMessage(message, this);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Create mediator
+        var mediator = new ConcreteMediator();
+
+        // Create colleagues and register them with the mediator
+        var colleague1 = new ConcreteColleague(mediator);
+        var colleague2 = new ConcreteColleague(mediator);
+        var colleague3 = new ConcreteColleague(mediator);
+
+        mediator.RegisterColleague(colleague1);
+        mediator.RegisterColleague(colleague2);
+        mediator.RegisterColleague(colleague3);
+
+        // Colleagues communicate through the mediator
+        colleague1.SendMessage("Hello, colleagues!");
+
+        /*
+        Output:
+        Colleague sending message: Hello, colleagues!
+        Colleague received message: Hello, colleagues!
+        Colleague received message: Hello, colleagues!
+        Colleague received message: Hello, colleagues!
+        */
+    }
+}
+```
+
+In this example:
+- The `IMediator` interface defines the communication contract between colleagues.
+- The `ConcreteMediator` implements the mediator interface and keeps track of registered colleagues.
+- The `Colleague` abstract class provides a base for concrete colleagues and holds a reference to the mediator.
+- The `ConcreteColleague` class implements the concrete colleague and communicates with other colleagues through the mediator.
+
+This simple example demonstrates how the Mediator Pattern helps to decouple the objects involved in communication, allowing them to interact without having direct dependencies on each other.

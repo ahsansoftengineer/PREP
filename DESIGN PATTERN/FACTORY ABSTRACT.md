@@ -92,3 +92,67 @@ The Abstract Factory Pattern is another creational design pattern that provides 
    ```
 
    In this example, the `IFurnitureFactory` interface declares the method `CreateChair()`, and the concrete factories (`ModernFurnitureFactory` and `VictorianFurnitureFactory`) implement this interface to create a family of related products (chairs). The client code uses these factories to create chairs without specifying their concrete classes, ensuring that the created chairs are compatible within the same style or family.
+
+
+   ### Where does dotnet itself is using Abstract Factory it self
+
+   In .NET Core, the Abstract Factory Pattern is not explicitly used by the framework itself as a primary design pattern. However, the Abstract Factory Pattern is a common and useful pattern employed by developers when designing and implementing applications using .NET Core or any other software framework.
+
+The Abstract Factory Pattern is a creational pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes. It allows a client to create objects without specifying their exact types, and it ensures that the created objects are compatible with each other.
+
+In .NET Core, you might find examples of the Abstract Factory Pattern in various application components, especially in scenarios where you need to create families of objects that work together or when you want to provide a level of abstraction for object creation.
+
+Here's a simplified example to illustrate how the Abstract Factory Pattern could be used in .NET Core:
+
+```csharp
+// Abstract Factory interface
+public interface IAnimalFactory
+{
+    IHerbivore CreateHerbivore();
+    ICarnivore CreateCarnivore();
+}
+
+// Abstract Product interfaces
+public interface IHerbivore { }
+public interface ICarnivore { }
+
+// Concrete Product classes
+public class Wildebeest : IHerbivore { }
+public class Lion : ICarnivore { }
+
+// Concrete Factory classes
+public class AfricanAnimalFactory : IAnimalFactory
+{
+    public IHerbivore CreateHerbivore()
+    {
+        return new Wildebeest();
+    }
+
+    public ICarnivore CreateCarnivore()
+    {
+        return new Lion();
+    }
+}
+
+// Client code
+public class AnimalWorld
+{
+    private IHerbivore herbivore;
+    private ICarnivore carnivore;
+
+    public AnimalWorld(IAnimalFactory factory)
+    {
+        herbivore = factory.CreateHerbivore();
+        carnivore = factory.CreateCarnivore();
+    }
+
+    public void RunFoodChain()
+    {
+        // Logic involving interaction between herbivores and carnivores
+    }
+}
+```
+
+In this example, `AnimalWorld` is the client that uses an abstract factory (`IAnimalFactory`) to create families of related objects (`Wildebeest` and `Lion`). The concrete implementation of the factory (`AfricanAnimalFactory`) determines which types of objects are created.
+
+This is just a simple illustration, and in a real-world scenario, abstract factories might be used in more complex systems for creating components with varying implementations based on some criteria.
