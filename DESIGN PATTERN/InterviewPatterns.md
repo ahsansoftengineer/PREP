@@ -16,6 +16,7 @@
 
 #### 2. Structural Patterns: 
 - These patterns are concerned with the composition of classes and objects to form larger structures. They provide solutions to various structural problems, such as how to create object hierarchies or how to handle the relationships between objects.
+
 | Heading | Defination |
 |:-------:|:---------- | 
 | Bridge | The Bridge Design Pattern is a structural design pattern that separates abstraction from implementation, allowing them to vary independently. It involves creating a bridge interface that contains an instance of the implementation interface. This decouples the abstraction and implementation, enabling them to evolve independently.|
@@ -29,6 +30,7 @@
 
 #### 3. Behavioral Patterns:
 - These patterns are concerned with the behavior and communication between objects. They provide solutions to various communication problems, such as how to pass messages between objects or how to encapsulate complex behavior.
+
 | Heading | Defination |
 |:-------:|:---------- | 
 | **Chain of Responsibility** | The Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.|
@@ -41,9 +43,9 @@
 
 
 ### Design Patterns
+
 | Heading | Defination |
 |:-------:|:---------- | 
-
 | Domain Driven Design | Overall, DDD helps create software systems that are better aligned with the business domain and are more flexible and maintainable over time. |
 | Repository | In software engineering, a repository is a design pattern that provides an abstraction layer between the application and the database. It provides a set of methods to access and manipulate data in the database without exposing the underlying implementation details |
 | Generic Repository | A generic repository is a generic implementation of a repository that provides a generic set of methods to work with any type of entity or data model. It uses a generic type parameter to allow the repository to work with any entity, without the need for specific implementations for each entity type. |
@@ -53,5 +55,35 @@
 | Decorator | The Decorator Pattern is useful in situations where there are many variations of a class, each with slightly different behavior, but where it is important to keep the class hierarchy flat and avoid creating a large number of subclasses. By using decorators to add behavior dynamically, it is possible to create many different variations of an object while keeping the original class hierarchy intact. |
 
 
+
+1. **Creational Patterns**:
+- **Singleton**: Ensures a class has only one instance and provides a global point of access to it.
+- **Factory Method**: Defines an interface for creating an object but allows subclasses to alter the type of objects that will be created.
+- **Abstract Factory**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+- **Builder**: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+
+2. **Structural Patterns**:
+- **Adapter**: Allows the interface of an existing class to be used as another interface.
+- **Decorator**: Attaches additional responsibilities to an object dynamically, providing a flexible alternative to subclassing for extending functionality.
+- **Proxy**: Provides a surrogate or placeholder for another object to control access to it.
+- **Composite**: Composes objects into tree structures to represent part-whole hierarchies.
+
+3. **Behavioral Patterns**:
+- **Observer**: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+- **Strategy**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+- **Command**: Encapsulates a request as an object, thereby allowing for parameterization of clients with queuing, requests, and operations.
+- **State**: Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+4. **Architectural Patterns**:
+- **MVC (Model-View-Controller)**: Separates an application into three interconnected components - Model, View, and Controller.
+- **MVVM (Model-View-ViewModel)**: Extends the MVC pattern by introducing a ViewModel to separate the UI and the business logic.
+- **Repository**: Separates the logic that retrieves data from a data source from the business logic, providing a single access point to the data.
+
+5. **Concurrency Patterns**:
+- **Producer-Consumer**: Coordinates the activities of separate threads or processes producing and consuming data items.
+- **Semaphore**: Controls access to a common resource with limited capacity.
+- **Reader-Writer Lock**: Provides synchronization for multiple threads reading a resource while allowing only one thread to write to it.
+
+These design patterns serve as best practices and proven solutions to common software design problems. They help developers create maintainable, modular, and efficient code by promoting the separation of concerns and the use of well-established design principles. Depending on the problem at hand, different design patterns can be applied to achieve the desired software architecture and behavior.
 
 
