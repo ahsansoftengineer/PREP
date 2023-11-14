@@ -1,11 +1,20 @@
 
 
 
-### DEPENDENCY INJECTION
+## DEPENDENCY INJECTION
+### Dependecny Injection
+- Dependency Injection (DI) is a software design pattern that deals with how components or services obtain their dependencies. In object-oriented programming, a class often depends on other classes or services to fulfill its responsibilities. Dependency Injection is a way to achieve inversion of control (IoC) by providing dependencies from the outside rather than creating them within the class.
+
+### Dependency Inversion
+- Dependency Inversion is another principle in software design that complements the Dependency Injection pattern. It is part of the SOLID principles, specifically the Dependency Inversion Principle (DIP), which was introduced by Robert C. Martin. The Dependency Inversion Principle states.
+1. High-level modules should not depend on low-level modules. Both should depend on abstractions.
+2. Abstractions should not depend on details. Details should depend on abstractions.
+
 ### What is Service LifeTimes?
 1. Transient -> Create each time they are requested from the service container,
 2. Scoped -> Created Once per client request (connection)
 3. Singleton -> Created at the first time they are requested (or when Startup.ConfigureServices is run and an instance is specified with the service registration). Every subsequent request uses the same instance. If the app requires singleton behaviour, allowing the service container to manage the service's lifetime is recommended. Don't implement the singleton design pattern and provide user code to manage the object's lifetime in the class.
+
 ### DI LifeTime Dotnet Core API
 #### First Request Chrome
 -------------xxx-----------
