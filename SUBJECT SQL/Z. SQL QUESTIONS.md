@@ -57,46 +57,7 @@ Certainly! High-level interview questions for SQL Server can cover a range of to
 19. **What are the advantages and disadvantages of using stored procedures?**
     - Advantages of stored procedures include improved performance (as they are precompiled), encapsulation of business logic, and security through permissions. Disadvantages may include decreased portability, potential for code redundancy, and sometimes a steeper learning curve.
 
-20. **Explain the concept of database normalization forms (1NF, 2NF, 3NF, BCNF).**
-    - These normalization forms are stages in the normalization process:
-        - 1NF (First Normal Form): Eliminate duplicate columns from the same table.
-        - 2NF (Second Normal Form): Meet the requirements of 1NF and remove partial dependencies.
-        - 3NF (Third Normal Form): Meet the requirements of 2NF and remove transitive dependencies.
-        - BCNF (Boyce-Codd Normal Form): A stricter form of 3NF that eliminates certain types of anomalies.
 
 These questions cover a range of topics related to SQL Server and can help assess a candidate's understanding of database concepts, optimization, and security.
-
-### Indexes Types in SQL
-In SQL, indexes are structures associated with a table or view that help speed up the retrieval of rows based on the values in one or more columns. There are several types of indexes in SQL, each serving a specific purpose. Here are some common types:
-
-1. **Clustered Index:**
-   - A clustered index determines the physical order of data rows in a table. There can be only one clustered index per table, and the order of the index is the order of the data rows in the table. When a table has a clustered index, it is referred to as a clustered table.
-
-2. **Non-Clustered Index:**
-   - A non-clustered index does not alter the physical order of data rows in a table. Instead, it creates a separate structure that includes a sorted list of references to the table rows. A table can have multiple non-clustered indexes.
-
-3. **Unique Index:**
-   - A unique index ensures that the indexed columns contain unique values, similar to a unique constraint. It can be applied to both clustered and non-clustered indexes.
-
-4. **Composite Index:**
-   - A composite index is an index on multiple columns. It is useful when queries involve conditions on multiple columns. The order of columns in a composite index is crucial, and it affects the efficiency of the index for different query conditions.
-
-5. **Covering Index:**
-   - A covering index includes all the columns required to satisfy a query, eliminating the need to access the actual data pages. This can significantly improve query performance, especially for queries that retrieve a small set of columns.
-
-6. **Full-Text Index:**
-   - A full-text index is used for searching and indexing the content of character-based columns, typically used in text-based searches. It enables efficient searching for words or phrases within large text data.
-
-7. **Spatial Index:**
-   - A spatial index is used for optimizing queries involving spatial data types, such as geometry or geography. It helps improve the performance of spatial queries, such as finding points within a certain distance or inside a specific region.
-
-8. **Filtered Index:**
-   - A filtered index is an index created on a subset of data rows that meet a specific condition. It is useful when queries consistently access a well-defined subset of data, allowing for a smaller and more efficient index.
-
-9. **XML Index:**
-   - An XML index is used to improve the performance of queries involving XML data. It can be created on columns storing XML data, providing a more efficient way to retrieve specific XML nodes or values.
-
-10. **Columnstore Index:**
-    - Columnstore indexes are designed for data warehousing scenarios. They store and manage data in columnar format, improving compression and enabling high-speed analytics queries on large datasets.
 
 Choosing the right type of index depends on the specific requirements of your queries and the characteristics of your data. It's essential to analyze the query patterns and workload to determine the most effective indexing strategy.
