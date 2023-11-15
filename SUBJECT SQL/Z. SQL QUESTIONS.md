@@ -61,3 +61,34 @@ Certainly! High-level interview questions for SQL Server can cover a range of to
 These questions cover a range of topics related to SQL Server and can help assess a candidate's understanding of database concepts, optimization, and security.
 
 Choosing the right type of index depends on the specific requirements of your queries and the characteristics of your data. It's essential to analyze the query patterns and workload to determine the most effective indexing strategy.
+
+#### CURSOR IN SQL
+#### INLINE TABLE FUNCTIONS
+
+#### SUBQUIRES OR JOINS
+
+#### WHERE VS HAVING
+#### DIRTY READ
+#### LOST UPDATE
+#### NON REPEATABLE READS
+#### PHONTOM READS
+#### SNAPSHOT ISOLATIONS
+#### DEADLOCK VICTOM
+#### UNION VS INTERSECT
+#### DLL Triggers
+#### AUDIT TABLES
+#### GROUPING
+#### ROOLUP VS CUBE
+#### RANK AND DENSE RANK
+#### FUNCTIONS
+- NTILE
+- LEAD AND LEG
+- FIRSTVALUE
+- PIVOT TABLES
+- IIF
+- TRYPARSE
+- TRYCONVERT
+- EOMONTH
+- DATEFROMPARTS VS DATETIME2FROM
+- OFFSETFETCH NEXT
+- IDENTITY VS SEQUENCE
