@@ -1,6 +1,6 @@
 Subject: Resignation - Muhammad Ahsan Moin
 
-Dear Zain,
+Dear Sir,
 
 I hope this email finds you well. After careful consideration, I have decided to resign from my position as Senior Software Engineer at Star Bazaar, effective 1 Month from today.
 
