@@ -1,4 +1,4 @@
-Subject: Resignation - Muhammad Ahsan Moin
+### Subject: Resignation - Muhammad Ahsan Moin
 
 Dear Sir,
 
@@ -10,3 +10,22 @@ Thank you for your understanding, and I appreciate your support.
 
 Best regards,
 Muhammad Ahsan Moin
+
+
+
+### Short Notice for Resignation
+
+
+Dear Sir
+
+
+1.	I Muhammad Ahsan working as Senior Software Engineer at Star Ba8zaar wants to submit the following for your consideration
+
+2.	I want to submit my resignation from the post of Senior Software Engineer. I apologize for any inconveniences and sudden news may cause. Thank you for the fantastic opportunities you've offered me to grow professionally and personally. and let me know if there is anything I can do to make the transition smoother.
+
+3.	Please consider my resignation as per policy.
+
+
+Sincerely
+M Ahsan Moin.
+17 Nov, 2023
