@@ -112,9 +112,6 @@ public sealed class MenuSection : Entity<MenuSectionId>
   }
 }
 ```
-
-
-```
 2. Menu
 ```csharp
 namespace Donation.Domain.Menu
