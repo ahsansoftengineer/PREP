@@ -14,7 +14,7 @@ During my time at Starbazaar, my primary roles and responsibilities can be descr
 6. Ensuring that development standards, policies, and procedures are strictly adhered to.
 
 #### WORK EXPERIENCE
-Throughout my software development journey, I have predominantly worked on enterprise-level products, such as ERP and SaaS-based applications.
+Throughout my software development journey, I have mostly worked on enterprise-level products, such as ERP and SaaS-based applications.
 
 
 
