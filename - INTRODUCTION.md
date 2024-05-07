@@ -16,6 +16,8 @@ During my time at Starbazaar, my primary roles and responsibilities can be descr
 #### WORK EXPERIENCE
 Throughout my software development journey, I have mostly worked on enterprise-level products, such as ERP and SaaS-based applications.
 
+### END OF INTRODUCTION
+Again Thank you! Let's move forward into the core of our conversation. What topics would you like to explore first?
 
 
 ### xxx----------------------------------------------------xxxx
