@@ -2,7 +2,7 @@
 First and foremost, I want to express my gratitude for the opportunity to interview for a position with your company today.
 
 ### INTRODUCTION
-My name is Muhammad Ahsan, and I would describe myself as a Senior Software Engineer or Full Stack Developer.
+My name is Muhammad Ahsan, and I would describe myself as a Senior Software Engineer.
 
 #### CURRENT ROLE
 During my time at Starbazaar, my primary roles and responsibilities can be described as:
