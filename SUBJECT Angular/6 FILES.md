@@ -46,9 +46,7 @@
 ```javascript
 (window as any).global = window;
 ```
-#### server.ts
-- express js backend configuration for server 
-- SSR and Prerendering
+
 
 #### tsconfig files
 - **tsconfig** defines TypeScript compiler options and settings for a project.
@@ -60,11 +58,15 @@
 -  **tsconfig.server.json** configures TypeScript compilation for server-side code in Angular Universal projects.
 - **tsconfig.spec.json** configures TypeScript compilation for testing in Angular projects
 
+
 #### SRC
-1. index.html
+#### server.ts
+- server.ts is the entry point for server-side rendering in Angular Universal applications.
+- SSR and Prerendering
+1. index.html Files that Surves at the root level of app
 2. main.server.ts
-3. main.ts
-4. styles.scss
+3. **main.ts** serves as the entry point for **client-side** Angular applications, while **server.ts** serves as the entry point for server-side rendering (SSR) in Angular Universal applications.
+4. **styles.scss** Global CSS in Angular App
 
 #### APP
 1. app.module.ts
