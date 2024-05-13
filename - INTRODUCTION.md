@@ -11,14 +11,14 @@ Throughout my tenure at Starbazaar, I have undertaken a range of pivotal respons
 3. Strategically scheduling tasks to optimize workflow efficiency.
 4. Conducting code reviews, optimization, and overseeing deployments.
 5. Managing legacy code to ensure its compatibility with evolving application frameworks.
-6. Ensuring that development standards, policies, and procedures are strictly adhered to.
+6. Ensuring that development standards, are strictly adhered to.
 
 #### WORK EXPERIENCE
 - Throughout my tenure, I have predominantly focused on developing enterprise-grade solutions, specializing in ERP and SaaS-based applications.
-- I engage my self by participating in the discussion of code & performance improvements.
+- I keep engaging my self by participating in discussion of code & performance improvements.
 
 ### END OF INTRODUCTION
-Again Thank you! Let's move forward into the core of our conversation. What topics would you like to explore first?
+Again Thank you! Let's move forward into the core of our conversation?
 
 
 ### xxx----------------------------------------------------xxxx
