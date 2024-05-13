@@ -5,16 +5,17 @@ First and foremost, I want to express my gratitude for the opportunity to interv
 My name is Muhammad Ahsan, and I would describe myself as a Senior Software Engineer.
 
 #### CURRENT ROLE
-During my time at Starbazaar, my primary roles and responsibilities can be described as:
-1. Analyzing the application lifecycle and business requirements.
+Throughout my tenure at Starbazaar, I have undertaken a range of pivotal responsibilities including
+1. Analyzing the application lifecycle and aligning it with business requirements.
 2. Gathering information for upcoming features and tracking the status of application.
-3. Scheduling tasks according to the needs and status of application.
+3. Strategically scheduling tasks to optimize workflow efficiency.
 4. Conducting code reviews, optimization, and overseeing deployments.
-5. Managing legacy code within applications.
+5. Managing legacy code to ensure its compatibility with evolving application frameworks.
 6. Ensuring that development standards, policies, and procedures are strictly adhered to.
 
 #### WORK EXPERIENCE
-Throughout my software development journey, I have mostly worked on enterprise-level products, such as ERP and SaaS-based applications.
+- Throughout my tenure, I have predominantly focused on developing enterprise-grade solutions, specializing in ERP and SaaS-based applications.
+- I engage my self by participating in the discussion of code & performance improvements.
 
 ### END OF INTRODUCTION
 Again Thank you! Let's move forward into the core of our conversation. What topics would you like to explore first?
