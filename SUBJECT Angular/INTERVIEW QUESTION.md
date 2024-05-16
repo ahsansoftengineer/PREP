@@ -91,6 +91,30 @@
 7. Some features of ES6 newly introduced
 8. Globalization in js
 9. var vs const vs let
+15. What is recursion in a programming language?
+17. What are arrow functions?
+18. What are classes in javascript?
+16. What do you mean by BOM / DOM?
+
+#### JS Advance Questions
+10. Explain call(), apply() and, bind() methods.
+11. Explain Scope and Scope Chain in javascript.
+12. Explain Closures in JavaScript.
+13. What are the types of errors in javascript?
+14. What is memoization?
+19. What are generator functions?
+20. Explain WeakSet in javascript.
+21. Explain WeakMap in javascript.
+22. Difference between prototypal and classical inheritance
+23. What is a Temporal Dead Zone?
+24. Is JavaScript a pass-by-reference or pass-by-value language?
+25. What are the primitive data types in JavaScript?
+26. What is the role of deferred scripts in JavaScript?
+27. What has to be done in order to put Lexical Scoping into practice?
+28. Write a function that performs binary search on a sorted array.
+29. Implement a function that returns an updated array with r right rotations on an array of integers?
+30. In JavaScript, how do you turn an Object into an Array []
+
 
 #### Experience Test
 - You have some data provided by API and you need to Display some other information depending on that data to client
