@@ -5,7 +5,7 @@ First and foremost, I want to express my gratitude for the opportunity to interv
 My name is Muhammad Ahsan, and I would describe myself as a Senior Software Engineer.
 
 #### CURRENT ROLE
-- Throughout my tenure of Web Development Starbazaar is one of the great experience I had, I have undertaken a range of responsibilities including
+- Throughout my tenure of Web Development, Starbazaar is one of the great experience I ever had, I have undertaken a range of responsibilities including
 1. Analyzing the application lifecycle and aligning it with business requirements.
 2. Gathering information for upcoming features and tracking the status of application.
 3. Strategically scheduling tasks to optimize workflow efficiency.
