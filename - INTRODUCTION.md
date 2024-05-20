@@ -8,13 +8,12 @@ My name is Muhammad Ahsan, and I would describe myself as a Senior Software Engi
 - Throughout my tenure of Web Development, Starbazaar is one of the great experience I ever had, I have undertaken a range of responsibilities including
 1. Analyzing the application lifecycle and aligning it with business requirements.
 2. Gathering information for upcoming features and tracking the status of application.
-3. Strategically scheduling tasks to optimize workflow efficiency.
+- 3. Strategically scheduling tasks to optimize workflow efficiency.
 4. Conducting code reviews, optimization, and overseeing deployments.
 5. Managing legacy code to ensure its compatibility with evolving application frameworks.
-6. Ensuring that development standards, are strictly adhered to.
 
 #### WORK EXPERIENCE
-- Throughout my tenure, I have predominantly focused on developing enterprise-grade solutions, specializing in ERP and SaaS-based applications.
+- I have mostly worked on enterprise-grade solutions like ERP and SaaS-based applications.
 - I keep engaging my self by participating in discussion of code & performance improvements.
 
 ### END OF INTRODUCTION
