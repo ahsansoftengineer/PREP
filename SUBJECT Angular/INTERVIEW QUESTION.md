@@ -1,12 +1,13 @@
 ### INTERVIEW HINT
-Do Prepare for below Questions further are provided in JD
-SOLID
-OOP, Functional Programming
-What is Design Pattern?
-What is DOM (Document Object Model)?
-Angular Specific Design Patterns
-Angular Features
-Promises, async, await, callback functions,
+- Do Prepare for below Questions further are provided in JD
+1. SOLID
+2. OOP, Functional Programming
+3. What is Design Pattern?
+4. What is DOM (Document Object Model)?
+5. Angular Specific Design Patterns
+6. Angular Features
+7. Typescript Features
+8. Promises, async, await, callback functions
 
 ### My Introduction:
 - My name is Muhammad Ahsan today I am going to conduct your interview, You can answer your questions in English / Urdu how ever you comfortable
