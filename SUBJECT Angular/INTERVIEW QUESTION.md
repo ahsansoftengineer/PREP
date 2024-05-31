@@ -34,6 +34,7 @@
 - - Package.json, package-lock.json
 - - Custom Interceptors, Guard (async, sync)
 - - Difference between Typescript / Javascript?
+  - Diff amoung class / abstract class / interface?
 - - Template Driven Form vs Reactive Form
 
 - Final Questions
