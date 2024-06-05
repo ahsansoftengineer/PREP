@@ -19,10 +19,10 @@
 #### First Request Chrome
 -------------xxx-----------
 From DependencyService1
-- Transient - 4a3256f2-b319-4d64-bbc3-856d4eefe38e // Every Step New
+- Transient - 4a3256f2-b319-4d64-bbc3-856d4eefe38e // New for Every Class
 - Scoped - 31764c5c-c8df-471f-9b61-06085a3d2f0d // Each for Request
 - Singleton - 93fefd73-db11-4713-a305-e0a5468f522e // Same for every Request
-- Singleton Instance - 00000000-0000-0000-0000-000000000000 // // Same for every Request
+- Singleton Instance - 00000000-0000-0000-0000-000000000000 // Same for every Request (When Registering Instance Twice)
 
 -------------xxx-----------
 From DependencyService2
