@@ -5,14 +5,30 @@ First and foremost, I want to express my gratitude for the opportunity to interv
 My name is Muhammad Ahsan, and I would describe myself as a Senior Software Engineer.
 
 #### CURRENT ROLE
+Throughout my tenure in Web Development, working at Starbazaar has been one of the greatest experiences I have had. I have undertaken a range of responsibilities, including:
+
+1. Serving as a Team Lead and Senior Developer
+2. Managing tasks for upcoming features and bugs
+3. Specializing in both **Backend and Frontend** development
+4. Gaining experience with AWS, Linux, and Nginx
+
+That's my introduction. We can now continue towards the technical discussion.
+
+
+### SALUTATION (MEDIUM)
+First and foremost, I want to express my gratitude for the opportunity to interview for a position with your company today.
+
+### INTRODUCTION
+My name is Muhammad Ahsan, and I would describe myself as a Senior Software Engineer.
+
+#### CURRENT ROLE
 - Throughout my tenure of Web Development, Starbazaar is one of the great experience I ever had, I have undertaken a range of responsibilities including
 1. Analyzing the application lifecycle and aligning it with business requirements.
 2. Gathering information for upcoming features and tracking the status of application.
 3. Conducting code reviews, optimization, and overseeing deployments.
 4. Managing legacy code to ensure its compatibility with evolving application frameworks.
 
-#### WORK EXPERIENCE
-- I have mostly worked on enterprise-grade solutions like ERP and SaaS-based applications.
+
 ### END OF INTRODUCTION
 Again Thank you! Let's move forward into the core of our conversation?
 
