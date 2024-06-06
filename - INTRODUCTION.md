@@ -9,8 +9,9 @@ Throughout my tenure in Web Development, working at Starbazaar has been one of t
 
 1. Serving as a Team Lead and Senior Developer
 2. Managing tasks for upcoming features and bugs
-3. Specializing in both **Backend and Frontend** development
-4. Gaining experience with AWS, Linux, and Nginx
+3. Updating Manager related to Status of Products.
+4. Specializing in both **Backend and Frontend** development
+5. Gaining experience with AWS, Linux, and Nginx
 
 That's my introduction. We can now continue towards the technical discussion.
 
