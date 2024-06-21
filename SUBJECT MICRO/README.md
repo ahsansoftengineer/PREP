@@ -1,0 +1,14 @@
+### MICROSERVICE ARCH
+#### COMM TYPE
+#### DISTRIBUTED TRANSACTION
+#### EVENT BASED COMM
+- Retrials, Replays
+- Retention of Messages
+- Sending same message twice
+
+#### TYPES OF COUPLING
+#### LOGGING, MONITORING & TRACING
+#### SERVICE DISCOVERY
+#### SIDE CAR PATTERN
+#### EVENT SOURCING
+
