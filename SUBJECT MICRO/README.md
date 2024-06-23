@@ -1,14 +1,31 @@
 ### MICROSERVICE ARCH
+[Youtube Video](https://www.youtube.com/watch?v=3UDJvF0CMkQ&list=PLTCrU9sGyburHcVKRuw2yXt7V7HEa6ZYY&index=7)
+ 
 #### COMM TYPE
 #### DISTRIBUTED TRANSACTION
 #### EVENT BASED COMM
+1. Problems
+- Lost Messages
+- Order of Messages
+- Consumer at fault
+2. Solutions
 - Retrials, Replays
 - Retention of Messages
 - Sending same message twice
 
-#### TYPES OF COUPLING
+#### TYPES OF COUPLING (COHESION & LOW COUPLING)
+- Cohesion is the degree to which the elements inside a module belong together. A module could be a class or a package or even a Microservice. Simply put, it means **The Code that changes together, stays together**
+
+- Coupling is the degree of interdependence between software modules. A module could be a class or a package or even a Microservice. Effectively, the coupling is about how changing one thing required change in another.
+##### 4 TYPES OF COUPING
+1. Domain
+2. Pass-through
+3. Content
+4. Common
+
 #### LOGGING, MONITORING & TRACING
 #### SERVICE DISCOVERY
 #### SIDE CAR PATTERN
 #### EVENT SOURCING
+
 
