@@ -1,6 +1,17 @@
 ### MICROSERVICE ARCH
 [Youtube Video](https://www.youtube.com/watch?v=3UDJvF0CMkQ&list=PLTCrU9sGyburHcVKRuw2yXt7V7HEa6ZYY&index=7)
  
+### What are Microservices
+- Microservices are an architectural style where an application is divided into small, independent services, each focusing on a specific business function. These services communicate through APIs and can be developed, deployed, and scaled independently, offering flexibility, scalability, and resilience. However, they introduce complexity in managing distributed systems and ensuring data consistency.
+1. Single Responsibility
+2. Decentralized Data Management
+3. Autonomous and Loosely Coupled
+4. Technology Agnostic (Different Services can use Different Language, Framework)
+5. Continuous Delivery and Deployment
+6. Fault Isolation (1 Service Failure doesn't let Whole Application Down)
+7. Scalability (Service can be Scale Up / Down Depending on Usage)
+
+
 #### COMM TYPE
 #### DISTRIBUTED TRANSACTION
 #### EVENT BASED COMM
