@@ -12,3 +12,11 @@ In .NET Core, a suite typically refers to a collection of related libraries, too
 6. Accessing Attributes: You can retrieve attribute information at runtime using reflection. This allows you to inspect and analyze the attributes applied to types and their members, enabling dynamic behavior based on the attribute values.
 7. Multiple Attributes: You can apply multiple attributes to the same target element by separating them with commas. This allows you to combine multiple metadata or behaviors on a single code element.
 8. Overall, attributes in C# provide a flexible mechanism to extend and enhance your code by adding metadata and declarative information. They enable a wide range of scenarios, from documentation and code analysis to runtime behavior modification and customization.
+
+### Reflection 
+- Reflection is a powerful feature of the .NET Core framework that allows you to inspect and manipulate metadata about types, objects, and assemblies at runtime. Here are some key points about reflection in .NET Core:
+1. Definition: Reflection is the ability of a program to inspect its own code at runtime. It allows you to examine the types, methods, properties, fields, and other members of an object, as well as to create new instances of types dynamically and invoke methods and properties.
+2. Assembly and Type objects: Reflection in .NET Core is based on the Assembly and Type objects. The Assembly object represents a .NET assembly, which is a collection of related types and resources. The Type object represents a type, which is a blueprint for creating objects.
+3. Use cases: Reflection can be used for a variety of tasks, such as dependency injection, serialization and deserialization, dynamic loading of assemblies, and runtime code generation.
+4. Performance: Reflection can be slow and resource-intensive, particularly when used to access private members or to invoke methods and properties dynamically. Therefore, it's important to use reflection judiciously and only when necessary.
+5. Security: Reflection can also present security risks, since it allows you to access and modify private members and execute code dynamically. Therefore, it's important to use reflection with care and to restrict access to sensitive code and data as needed.

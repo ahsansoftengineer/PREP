@@ -37,3 +37,9 @@ Certainly! When a .NET application starts running, several steps are involved in
     - When the application completes its execution or encounters an unhandled exception, it terminates, and the CLR performs cleanup tasks.
 
 In summary, the .NET application startup involves compilation, assembly loading, metadata processing, JIT compilation, type loading, and execution under the management of the Common Language Runtime. This process ensures that .NET applications are platform-independent and can take advantage of features like memory management and exception handling provided by the CLR.
+
+36. What is JIT and how many types of JIT compilations do you know?
+There are two steps to the whole process- first where the source code is converted to IL by language-specific compilers, and the second is converting IL to machine instructions by JIT compilers. These are called JIT compilers because only the executed IL code fragments are compiled to machine instructions, that too at the runtime, or should we say just-in-time for execution.
+- Pre-JIT Compilers
+- Econo JIT Compilers
+- Normal JIT Compilers
